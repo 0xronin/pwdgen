@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Mulish', sans-serif;
+}
+
+p{
+    margin: 5px 0;
+}
+
+h2{
+    margin: 10px 0 20px;
+}
+
+input[type=checkbox]{
+    margin-right: 0;
+}
+
+.container {
+    margin-top: 200px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    width: 350px;
+    max-width: 100%;
+    border-radius: 20px;
+    text-align: center;
+
+}
+
+.result-container {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 12px 10px;
+    height: 50px;
+    width: 100%;
+}   
+
+.result-container #result{
+    word-wrap: break-word;
+    max-width: calc(100% - 40px);
+    color: #333;
+}
+
+.result-container .btn{
+    font-size: 20px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 40px;
+    width: 40px;
+}
+
+.btn {
+    font-family: 'Mulish', sans-serif;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 8px 12px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.btn-large {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.setting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+
+@media screen and (max-width: 400px) {
+    .result-container{
+        font-size: 14px;
+    }
+}
+
+input[type="checkbox"] {
+    width: 40px;
+    height: 20px;
+    -webkit-appearance: none;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    outline: none;
+    border-radius: 20px;
+    box-shadow: inset 0 0 3.5px #bebcbe;
+    transition: 0.3s;
+}
+
+input:checked[type="checkbox"] {
+    background-color: #00c853;   
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 0 2px #bebcbe;
+    transition: 0.3s;
+}
+
+input:checked[type="checkbox"]::before {
+    margin-left: 20px;
+}
+
+input[type="number"]{
+    width: 50px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    height: 20px;
+    font-size: 16px;
+    font-weight: 10px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
